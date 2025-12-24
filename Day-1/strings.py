@@ -1,0 +1,9 @@
+name="python"
+print(name.capitalize())
+print(name.upper())
+print(name.lower())
+print(name.isdigit())
+print(name[-1])
+print(name[0:2])
+print(name[-5:-1])
+print(len(name))

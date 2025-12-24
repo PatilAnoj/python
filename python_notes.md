@@ -1,0 +1,6 @@
+-python is dynamically typed interpreted language
+-variables are not required to specify their types
+-python consists of basic data types like int,float,string,boolean
+-virtual environment creates a environment for a project that stores the versions of the libraries used for that specific project
+-we use input() to take inputs from user ,and input() returns string by default
+-type() is used to get the type of a variable 
