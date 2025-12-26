@@ -44,3 +44,25 @@ SETS
 - -,difference() => difference => prints elements of set A that are not in set B
 - ^,symmetric_difference() => symmetric difference => prints all elements from set A and set B except the common elements
 - ==  => used to check if two sets are equal or not i.e both sets contains same elements
+
+#DAY-3
+
+FUNCTIONS
+-function is a block of code that performs specific task
+-functions are created using def keyword
+def function_name():
+    print("hello this is function")
+
+-we can pass parameters to a function while it's declaration inside the brackets i.e def function_name(param1,param2,....)
+-the value of the parameters is passed while calling the function(argument1,argument2,...) this is called argument
+-we can pass default values of parameters if no argument is passed, while declaring the function using def person2(name="jay",age=18,course="java"):
+-Using *args allows a function to take any number of positional arguments.
+-using **kwargs allows a function to accept any number of keyword arguments.
+
+SCOPE
+-a variable scope specifies where a varible can be accessed 
+-there are 3 types of scopes local,global,nonlocal
+
+NON-LOCAL
+-In Python, the nonlocal keyword is used within nested functions to indicate that a variable is not local to the inner function, but rather belongs to an enclosing function’s scope.
+
