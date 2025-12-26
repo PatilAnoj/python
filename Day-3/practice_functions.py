@@ -1,32 +1,30 @@
 #Create a function that: Takes a string,Returns count of vowels
 
-def Vouels_count(sentence):
-    vowel_count={'a':0,'e':0,'i':0,'o':0,'u':0}
+def count_vowels(sentence):
+    count=0
+    vowels='aeiouAEIOU'
     for word in sentence:
-        if word in vowel_count:
-            vowel_count[word]=vowel_count[word]+1
-    print(vowel_count)
-Vouels_count("hello world")
+        if word in vowels:
+           count=count+1
+    return count
+print(count_vowels("hello world"))
 
 #average of numbers from a list
 
-def avg(list1):
-    sum=0
+def calculate_averages(list1):
+    total=0
     for digit in list1:
-        sum=sum+digit
-    return int(sum/len(list1))
-print(avg([10, 20, 30]))
+        total=total+digit
+    return total/len(list1)
+print(calculate_averages([10, 20, 30]))
 
 
 #Password Length Validation
 
-def length_validation(str):
-    if(len(str)>=8):
-        return True
-    else:
-        return False
-print(length_validation("Password123"))
-print(length_validation("pass123"))
+def is_valid_password(password):
+    return len(password)>=8
+print(is_valid_password("Password123"))
+print(is_valid_password("pass123"))
 
 
 
