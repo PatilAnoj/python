@@ -66,3 +66,19 @@ SCOPE
 NON-LOCAL
 -In Python, the nonlocal keyword is used within nested functions to indicate that a variable is not local to the inner function, but rather belongs to an enclosing function’s scope.
 
+#DAY-4
+
+CLASSES
+-class is considered as blueprint of objects 
+-
+
+SELF
+-it is a convention based paramater used in class to refer to the current instance (OBJECT) of that class
+-SELF is not a reserved keyword we can use any name for the first parameter of the class method,but self is used as industry standard 
+
+Why __init__ runs automatically
+-The __init__ method (short for "initialization") runs automatically because it is a special "dunder" (double-underscore) method that Python's object creation process is programmed to call whenever a new instance (object) of a class is created. 
+-__init__ is the constructor of the class,it is initialised at the time of object creation,used to initialise the values of the variables in the class
+
+instance variables are unique to each object and store data specific to that instance, while class variables are shared by all instances of a class and store common attributes or default settings. 
+
