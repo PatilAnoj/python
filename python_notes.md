@@ -102,3 +102,12 @@ with open("file_path") as f:
 Why with is better than open/close
 -because The with statement automatically takes care of closing the file once it leaves the with block, even in cases of error. I highly recommend that you use the with statement as much as possible, as it allows for cleaner code and makes handling any unexpected errors easier for you.
 
+-to write in a file
+with open("file_path",'w') as writer:
+    writer.write()
+
+-to read a file
+with open("file_path",'r')as reader:
+    reader.read()
+
+
