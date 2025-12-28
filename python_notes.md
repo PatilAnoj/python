@@ -82,3 +82,23 @@ Why __init__ runs automatically
 
 instance variables are unique to each object and store data specific to that instance, while class variables are shared by all instances of a class and store common attributes or default settings. 
 
+#DAY-5
+
+EXCEPTION
+-exception in python are error at runtime (not invalid syntax error)
+-we can handle it using try except block
+-if an exception occurs in try the except block executes
+-else is also used with try except
+-else executes only when the try block runs without any exception
+-finally is executed every time irrespective of exception
+
+FILES 
+-to open a file we use open("file_path") function
+-once a file is opened it is strictly the developer's responsibility to close it
+-the file that is opened must be closed
+-to do that automatically python provided with statement
+with open("file_path") as f:
+
+Why with is better than open/close
+-because The with statement automatically takes care of closing the file once it leaves the with block, even in cases of error. I highly recommend that you use the with statement as much as possible, as it allows for cleaner code and makes handling any unexpected errors easier for you.
+
