@@ -9,7 +9,7 @@
 
 LISTS
 -Lists in python are same as dynamic arrays that can store data of different data types
--Lists in python are ordered,i.e the maintain order of items
+-Lists in python are ordered,i.e they maintain order of items
 -they are mutable,i.e items in list once created can be changed later
 -list can store different values
 -we use list_name.append(element to insert) to insert new item in list at the last position.
