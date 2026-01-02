@@ -12,7 +12,7 @@ def validate_data_presence(data):
 def data_type_validation(data):
     if not isinstance(data["name"],str):
         raise ValueError("name must be string")
-    if not isinstance(data["price"],int) or isinstance(data["price"],float):
+    if not isinstance(data["price"],(int,float)):
         raise ValueError("price must be int'\'float")
     if not isinstance(data["stock"],int):
         raise ValueError("stock must be int")
@@ -28,8 +28,10 @@ def range_validation(data):
     return True
 
 def validate_product(data):
-    if validate_data_presence(data) and data_type_validation(data) and range_validation(data):
-        return "VALID"
+    validate_data_presence(data)
+    data_type_validation(data)
+    range_validation(data)
+    return "VALID"
     
 #time complexity O(1)
 #space constant
