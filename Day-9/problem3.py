@@ -1,7 +1,7 @@
 #API Payload Guard (Defensive Backend)
 
 def validate_order_payload(data):
-    if data is None or data is {}:
+    if not data :
         raise ValueError("payload is empty")
     if not "user_id" in data:
         raise ValueError("user_id not found")
@@ -19,9 +19,9 @@ def validate_order_payload(data):
         raise ValueError("user_id must be greater than 0")
     if not data["product_id"]>0:
         raise ValueError("product_id must be greater than 0")
-    if not data["quantity"]<1:
+    if  data["quantity"]<1:
         raise ValueError("quantity must be greater than or equals to 0")
-    return True
+    
 
 
 def process_order(data):
