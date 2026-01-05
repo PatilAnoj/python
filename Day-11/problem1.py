@@ -1,7 +1,7 @@
 #Simulate a Table (Users)
 
 def select_all(users):
-    return users
+    return users.copy()
 
 def select_where_age_gt(users, age):
     filtered_list=[x for x in users if x['age']>age]

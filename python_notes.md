@@ -111,3 +111,9 @@ with open("file_path",'r')as reader:
     reader.read()
 
 
+Q.why sql operates on sets instead of loops?
+->SQL is declarative and operates on sets because databases are optimized to process large volumes of data using query planners and indexes, avoiding row-by-row iteration in application code.
+
+Q.Why DB constraints are still required even if backend validates?
+->DB constraints protect data integrity even if backend logic fails, bugs are introduced, or multiple services write to the same database.
+
